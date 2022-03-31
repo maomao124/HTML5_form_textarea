@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<!--
+Project name(项目名称)：HTML5_form_textarea
+  File name(文件名): test1
+  Authors(作者）: mao
+  Author QQ：1296193245
+  GitHub：https://github.com/maomao124/
+  Date(创建日期)： 2022/3/31
+  Time(创建时间)： 20:33
+  Description(描述)： 无
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            background-color: #2efdff;
+        }
+
+        textarea {
+            width: 70vw;
+            height: 25vh;
+            color: #ff5f80;
+            font-size: 24px;
+            background-color: #76b6ff;
+            transition: all 1s linear 0s;
+        }
+
+        form input {
+            font-size: 36px;
+        }
+    </style>
+</head>
+<body>
+<form method="post" action="result.jsp">
+    <label>
+        <textarea name="textarea1">这是可编辑状态的正常textarea元素</textarea>
+    </label>
+    <br>
+    <label>
+        <textarea name="textarea2" readonly="readonly">这是只读（readonly）状态的textarea元素</textarea>
+    </label>
+    <br>
+    <label>
+        <textarea name="textarea1" disabled="disabled">这是禁用（disabled）状态的textarea元素</textarea>
+    </label>
+    <br>
+    <input type="submit" name="提交">
+</form>
+</body>
+</html>
